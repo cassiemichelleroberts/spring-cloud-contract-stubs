@@ -1,5 +1,5 @@
 {
-  "id" : "4b632f23-48d1-469f-81f5-90b9bed1c4bd",
+  "id" : "6857764d-438f-48c2-9145-51f37fd66c7a",
   "request" : {
     "url" : "/check",
     "method" : "PUT",
@@ -9,7 +9,7 @@
       }
     },
     "bodyPatterns" : [ {
-      "matchesJsonPath" : "$[?(@.['age'] == 21)]"
+      "matchesJsonPath" : "$[?(@.['age'] =~ /[2-9][0-9]/)]"
     } ]
   },
   "response" : {
@@ -20,5 +20,5 @@
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "4b632f23-48d1-469f-81f5-90b9bed1c4bd"
+  "uuid" : "6857764d-438f-48c2-9145-51f37fd66c7a"
 }
