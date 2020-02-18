@@ -1,0 +1,24 @@
+{
+  "id" : "8a7c2540-db74-4fe2-b233-d20616167d1e",
+  "request" : {
+    "url" : "/check",
+    "method" : "PUT",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['age'] == 19)]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"beerCheckStatus\":\"UNDERAGE\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "8a7c2540-db74-4fe2-b233-d20616167d1e"
+}
