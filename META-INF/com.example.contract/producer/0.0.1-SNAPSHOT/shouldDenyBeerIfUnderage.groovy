@@ -5,7 +5,7 @@ Contract.make {
         method 'PUT'
         url '/check'
         body([
-                "age": 18
+                "age": 19
         ])
         headers {
             contentType('application/json')
