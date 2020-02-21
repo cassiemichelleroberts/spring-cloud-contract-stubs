@@ -1,5 +1,5 @@
 {
-  "id" : "df9019cb-3769-4846-9753-5e2957905b6e",
+  "id" : "5526351d-f700-42fb-98db-f345a1883288",
   "request" : {
     "url" : "/check",
     "method" : "PUT",
@@ -9,16 +9,16 @@
       }
     },
     "bodyPatterns" : [ {
-      "matchesJsonPath" : "$[?(@.['age'] =~ /[2-9][0-9]/)]"
+      "matchesJsonPath" : "$[?(@.['age'] == 19)]"
     } ]
   },
   "response" : {
     "status" : 200,
-    "body" : "{\"beerCheckStatus\":\"OKAY\"}",
+    "body" : "{\"beerCheckStatus\":\"UNDERAGE\"}",
     "headers" : {
       "Content-Type" : "application/json"
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "df9019cb-3769-4846-9753-5e2957905b6e"
+  "uuid" : "5526351d-f700-42fb-98db-f345a1883288"
 }

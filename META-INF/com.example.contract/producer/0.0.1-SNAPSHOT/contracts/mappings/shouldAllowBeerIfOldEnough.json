@@ -1,5 +1,5 @@
 {
-  "id" : "df9019cb-3769-4846-9753-5e2957905b6e",
+  "id" : "64059313-acf9-4fae-93b4-f27994d22cd9",
   "request" : {
     "url" : "/check",
     "method" : "PUT",
@@ -20,5 +20,5 @@
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "df9019cb-3769-4846-9753-5e2957905b6e"
+  "uuid" : "64059313-acf9-4fae-93b4-f27994d22cd9"
 }
