@@ -1,0 +1,24 @@
+{
+  "id" : "f7301b8f-2ea8-4e3b-8caa-62a8b74c0654",
+  "request" : {
+    "url" : "/check",
+    "method" : "PUT",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['age'] =~ /[2-9][0-9]/)]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"beerCheckStatus\":\"OKAY\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "f7301b8f-2ea8-4e3b-8caa-62a8b74c0654"
+}
